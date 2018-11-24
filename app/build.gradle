@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.r3bl.samples.simplemediaplayer"
+        minSdkVersion 24
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+ext {
+    support_version = '27.1.1'
+}
+
+
+dependencies {
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation 'org.greenrobot:eventbus:3.0.0'
+}
